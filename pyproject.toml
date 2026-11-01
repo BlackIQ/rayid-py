@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rayid"
-version = "1.1.0"
+version = "1.1.1"
 description = "RayID is a generated code that we use to track logs, posts or events."
 readme = "README.md"
 requires-python = ">=3.9"
