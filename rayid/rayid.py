@@ -1,41 +1,51 @@
-import random
+import secrets
+from typing import Literal
 
-values = {
+IDType = Literal["digit", "lower", "upper", "all"]
+
+VALUES: dict[str, str] = {
     "digit": "0123456789",
     "lower": "abcdefghijklmnopqrstuvwxyz",
-    "upper": "abcdefghijklmnopqrstuvwxyz".upper(),
+    "upper": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 }
+
+VALUES["all"] = "".join(VALUES.values())
 
 
 class RayID:
-    def __init__(self, type) -> None:
-        self.type = type
+    def __init__(self, type: IDType) -> None:
+        if type not in VALUES:
+            raise ValueError(
+                f"Invalid ID type: {type!r}. " f"Expected one of: {', '.join(VALUES)}"
+            )
 
-    def engine(self, length):
-        result = ""
+        self.type: IDType = type
+
+    def characters(self) -> str:
+        return VALUES[self.type]
+
+    def engine(self, length: int) -> str:
+        if not isinstance(length, int) or isinstance(length, bool):
+            raise TypeError("Length must be an integer.")
+
+        if length <= 0:
+            raise ValueError("Length must be greater than zero.")
 
         characters = self.characters()
 
-        for i in range(0, length):
-            result += random.choice(characters)
+        return "".join(secrets.choice(characters) for _ in range(length))
 
-        return result
+    def gen(self, length: int) -> str:
+        if not isinstance(length, int) or isinstance(length, bool):
+            raise TypeError("Length must be an integer.")
 
-    def characters(self):
-        valuesResult = ""
+        if length <= 0:
+            raise ValueError("Length must be greater than zero.")
 
-        if (self.type == "all"):
-            for v in values:
-                valuesResult += values[v]
-        else:
-            valuesResult = values[self.type]
+        characters = self.characters()
+        first_characters = characters.replace("0", "")
 
-        return valuesResult
+        first = secrets.choice(first_characters)
+        remaining = "".join(secrets.choice(characters) for _ in range(length - 1))
 
-    def gen(self, length):
-        generated = self.engine(length)
-
-        if (generated[0] == "0"):
-            return self.engine(length)
-        else:
-            return generated
+        return first + remaining
