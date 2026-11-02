@@ -13,8 +13,8 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Dark mode
-    - scheme: yellow
-      primary: red
+    - scheme: slate
+      primary: yellow
       toggle:
         icon: material/brightness-4
         name: Light mode
@@ -27,8 +27,8 @@ theme:
 nav:
   - Home: index.md
   - Learn:
-      - Overview: learn/index.md
-      - Functions: learn/functions.md
+    - Install: learn/install.md
+    - Functions: learn/functions.md
 
 markdown_extensions:
   - tables
