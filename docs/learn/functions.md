@@ -1,3 +1,3 @@
-# Learn
+# Functions
 
-Functions
+Here are functions
