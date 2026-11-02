@@ -1,0 +1,38 @@
+site_name: RayID Docs
+site_description: Official RayID Package on PyPi documentation
+site_url: https://rayid-py.amirhossein.info
+
+repo_url: https://gitlab.com/blackiq-packages/pypi/rayid
+repo_name: amirhossein/rayid-py
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: yellow
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    - scheme: yellow
+      primary: red
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - Learn:
+      - Overview: learn/index.md
+      - Functions: learn/functions.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
