@@ -11,11 +11,11 @@ ray = RayID("digit")
 print(ray.gen(16))  # e.g. 4829103756120483
 ```
 
-|                  |                                                                                                |
-| ---------------- | ---------------------------------------------------------------------------------------------- |
-| PyPI             | [pypi.org/project/rayid](https://pypi.org/project/rayid/)                                      |
-| Source           | [GitLab](https://gitlab.com/blackiq-packages/pypi/rayid)                                       |
-| **RayID for Js** | [npm `rayid`](https://www.npmjs.com/package/rayid) · [docs](https://rayid-js.amirhossein.info) |
+|                  |                                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------- |
+| PyPI             | [pypi.org/project/rayid](https://pypi.org/project/rayid/)                                           |
+| Source           | [GitLab](https://gitlab.com/blackiq-packages/pypi/rayid)                                            |
+| **RayID for Js** | [npm `rayid`](https://www.npmjs.com/package/rayid) · [docs](https://rayid-js.docs.amirhossein.info) |
 
 ## Next
 
