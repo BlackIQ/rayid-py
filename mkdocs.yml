@@ -1,9 +1,9 @@
 site_name: RayID Docs
 site_description: Official RayID Package on PyPi documentation
-site_url: https://rayid-py.docs.amirhossein.info
+site_url: https://rayid-py.amirhossein.info
 
-repo_url: https://gitlab.com/blackiq-packages/pypi/rayid
-repo_name: amirhossein/rayid-py
+repo_url: https://github.com/BlackIQ/rayid-py
+repo_name: BlackIQ/rayid-py
 
 theme:
   name: material

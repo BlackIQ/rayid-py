@@ -29,9 +29,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://gitlab.com/blackiq-packages/pypi/rayid"
-Repository = "https://gitlab.com/blackiq-packages/pypi/rayid"
-Issues = "https://gitlab.com/blackiq-packages/pypi/rayid/-/issues"
+Homepage = "https://rayid-py.amirhossein.info"
+Repository = "https://github.com/BlackIQ/rayid-py"
+Issues = "https://github.com/BlackIQ/rayid-py/issues"
 
 [tool.setuptools.packages.find]
 include = ["rayid*"]

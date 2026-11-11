@@ -18,15 +18,15 @@ print(ray.gen(16))
 
 ## Docs
 
-Full documentation: [rayid-py.docs.amirhossein.info](https://rayid-py.docs.amirhossein.info)
+Full documentation: [rayid-py.amirhossein.info](https://rayid-py.amirhossein.info)
 
 ## Links
 
-|                  |                                                                                                     |
-| ---------------- | --------------------------------------------------------------------------------------------------- |
-| PyPI             | https://pypi.org/project/rayid/                                                                     |
-| Source           | https://gitlab.com/blackiq-packages/pypi/rayid                                                      |
-| **RayID for Js** | [npm `rayid`](https://www.npmjs.com/package/rayid) · [docs](https://rayid-js.docs.amirhossein.info) |
+| Title  | URL                                 |
+| ------ | ----------------------------------- |
+| PyPI   | https://pypi.org/project/rayid      |
+| Source | https://github.com/BlackIQ/rayid-py |
+| Docs   | https://rayid-py.amirhossein.info   |
 
 ## License
 

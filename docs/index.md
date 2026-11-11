@@ -8,14 +8,14 @@ RayID is a tiny helper around a character set and a length. You pick the alphabe
 from rayid import RayID
 
 ray = RayID("digit")
+
 print(ray.gen(16))  # e.g. 4829103756120483
 ```
 
-|                  |                                                                                                     |
-| ---------------- | --------------------------------------------------------------------------------------------------- |
-| PyPI             | [pypi.org/project/rayid](https://pypi.org/project/rayid/)                                           |
-| Source           | [GitLab](https://gitlab.com/blackiq-packages/pypi/rayid)                                            |
-| **RayID for Js** | [npm `rayid`](https://www.npmjs.com/package/rayid) · [docs](https://rayid-js.docs.amirhossein.info) |
+|        |                                                          |
+| ------ | -------------------------------------------------------- |
+| PyPI   | [pypi.org/project/rayid](https://pypi.org/project/rayid) |
+| Source | [GitHub](https://github.com/BlackIQ/rayid-py)            |
 
 ## Next
 
