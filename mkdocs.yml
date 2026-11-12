@@ -32,7 +32,7 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to system preference
   font:
-    text: Vazirmatn
+    text: Inter
     code: JetBrains Mono
   icon:
     repo: octicons/mark-github-24
