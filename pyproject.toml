@@ -7,7 +7,7 @@ name = "rayid"
 version = "1.1.5"
 description = "RayID is a generated code that we use to track logs, posts or events."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = { file = "LICENSE" }
 authors = [
     { name = "Amirhossein Mohammadi", email = "amirhosseinmohammadi1380@yahoo.com" }
@@ -39,8 +39,7 @@ include = ["rayid*"]
 [dependency-groups]
 dev = [
     "build>=1.6.1",
-    "mkdocs>=1.6.1",
-    "mkdocs-material>=9.7.7",
+    "zensical>=0.1.0",
     "pytest>=9.2.0",
     "twine>=7.0.0",
 ]
